@@ -12,15 +12,15 @@ const app = new Vue({
         estado: false
       });
       this.nuevaTarea = '';
-      localStorage.seItem('lista-vue', JSON.stringify(this.tareas));
+      localStorage.setItem('lista-vue', JSON.stringify(this.tareas));
     },
     editarTarea: function(index){
       this.tareas[index].estado = true;
-      localStorage.seItem('lista-vue', JSON.stringify(this.tareas));
+      localStorage.setItem('lista-vue', JSON.stringify(this.tareas));
     },
     eliminar: function(index){
       this.tareas.splice(index, 1);
-      localStorage.seItem('lista-vue', JSON.stringify(this.tareas));
+      localStorage.setItem('lista-vue', JSON.stringify(this.tareas));
     }
   },
   created: function(){
