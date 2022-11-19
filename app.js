@@ -24,6 +24,7 @@ const app = new Vue({
     editarTarea: function(index){
       //cambiar estado de tarea al presionar ok
       this.tareas[index].estado = true;
+      // this.tareas[index].estado = true; 
       localStorage.setItem('lista-vue', JSON.stringify(this.tareas));
     },
     eliminar: function(index){
