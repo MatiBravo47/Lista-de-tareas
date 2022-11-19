@@ -15,8 +15,8 @@ h3{
     color: #FFF;
 }
 
-.icons {
-    margin: 3px
+.icons, button {
+    margin: 0px 6px;
 }
 .iconos {
     display: flex;

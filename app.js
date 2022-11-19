@@ -21,10 +21,12 @@ const app = new Vue({
       this.nuevaTarea = '';
       localStorage.setItem('lista-vue', JSON.stringify(this.tareas));
     },
+    cancelarTarea: function(){
+      this.nuevaTarea = '';
+    },
     editarTarea: function(index){
-      //cambiar estado de tarea al presionar ok
-      this.tareas[index].estado = true;
-      // this.tareas[index].estado = true; 
+      //this.tareas[index].estado = true;
+      this.tareas[index].estado = !this.tareas[index].estado; 
       localStorage.setItem('lista-vue', JSON.stringify(this.tareas));
     },
     eliminar: function(index){
