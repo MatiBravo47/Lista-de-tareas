@@ -25,11 +25,8 @@
               :class="['alert', item.estado ? 'alert-dark text-decoration-line-through': 'alert-light']"  >
               <!-- justify-content-between deja nombres de un lado y botones del otro -->
           <div class="d-flex justify-content-between align-items-center">
-            <div>{{item.nombre}}</div>
-            <div class="d-flex align-items-center">
-              <div class="icons"><i :class="['fa-regular', item.estado ? 'fa-square-check': 'fa-square']" @click="editarTarea(index)"></i></div>
+            <div class="d-flex align-items-center"><div class="icons"><i :class="['fa-regular', item.estado ? 'fa-square-check': 'fa-square']" @click="editarTarea(index)"></i></div>{{item.nombre}}</div>
               <div class="icons"><i class="fa-regular fa-trash-can" @click="eliminar(index)"></i></div>
-            </div>
           </div>
         </div>
       </div>
