@@ -13,5 +13,3 @@ Lista de tareas donde se utiliza el localStorage para almacenar la informacion.
 
 https://matibravo47.github.io/Lista-de-tareas/
 
-
-Tutorial base del proyecto: https://www.youtube.com/watch?v=jfEEQVdbl54
