@@ -3,7 +3,7 @@
 ## Descripcion del proyecto
 Lista de tareas donde se utiliza el localStorage para almacenar la informacion.
 
-##:hammer:Funcionalidades del proyecto
+## :hammer:Funcionalidades del proyecto
 
 - `Añadir tarea` 
 - `Eliminar tarea` 
