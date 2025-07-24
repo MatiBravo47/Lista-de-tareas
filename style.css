@@ -1,33 +1,92 @@
 body {
-    background-color: #212121;
+  background-color: #1a1a1a;
 }
 
-h3{
-    color: #FFFFFF;
+h3 {
+  color: #f5f5f5;
 }
 
-
-.btn-primary:hover{
-    background-color: #4BBCE7;
-}
 .btn-primary {
-    background-color:#00A0DC;
-
-    color: #FFF;
+  background-color: #0066cc;
+  border-color: #0066cc;
+  color: #ffffff;
 }
 
-.icons, button {
-    margin: 0px 6px;
-}
-.iconos {
-    display: flex;
-    flex-direction: column;
+.btn-primary:hover {
+  background-color: #0052a3;
+  border-color: #0052a3;
 }
 
-.fa-square:hover{
-    color:forestgreen;
+.btn-danger {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #ffffff;
 }
 
-.fa-trash-can:hover{
-    color: red;
+.btn-danger:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+.form-control {
+  background-color: #2d2d2d;
+  border-color: #404040;
+  color: #f5f5f5;
+}
+
+.form-control:focus {
+  background-color: #2d2d2d;
+  border-color: #0066cc;
+  color: #f5f5f5;
+  box-shadow: 0 0 0 0.2rem rgba(0, 102, 204, 0.25);
+}
+
+.form-control::placeholder {
+  color: #adb5bd;
+}
+
+.alert-light {
+  background-color: #2a2a2a;
+  border-color: #3a3a3a;
+  color: #f5f5f5;
+}
+
+.alert-dark {
+  background-color: #343a40;
+  border-color: #454d55;
+  color: #f8f9fa;
+}
+
+.icons,
+button {
+  margin: 0px 6px;
+}
+
+.fa-square {
+  color: #6c757d;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.fa-square:hover {
+  color: #28a745;
+}
+
+.fa-square-check {
+  color: #28a745;
+  cursor: pointer;
+}
+
+.fa-trash-can {
+  color: #6c757d;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.fa-trash-can:hover {
+  color: #dc3545;
+}
+
+.task-item {
+  margin-bottom: 10px;
 }
