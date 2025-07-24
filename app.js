@@ -12,7 +12,12 @@ const app = new Vue({
   methods:{
     agregarTarea: function(){
       // 'this' para llamar propiedad de data 
-      // almacena nombre y estado en cada celda de array tareas 
+      // almacena nombre y estado en cada celda de array tareas
+        // Validar que no esté vacía o solo tenga espacios
+      if (this.nuevaTarea.trim() === '') {
+        alert('No se puede agregar una tarea vacía.');
+        return;
+      }
       this.tareas.push({
         nombre: this.nuevaTarea,
         estado: false
